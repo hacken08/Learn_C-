@@ -18,7 +18,7 @@ void calculator( ) {
          sum = num1 + num2;
 
          switch (sign2) {
-    case  '=': /* constant-expression */
+    case  '=': /* constant-expression   */
        cout<< "Your Answer is: ";
         cout<< sum;
         break;
