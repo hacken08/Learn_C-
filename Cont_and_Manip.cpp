@@ -76,7 +76,7 @@ int Manipulator() {
 int main(int argc, char const *argv[])
 {
     
-    ConstVaribale ();
+    Manipulator ();
 
     return 0;
 }

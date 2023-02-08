@@ -71,7 +71,7 @@ int typeCasting () {
 int main()
 {
 
-LogicalOperators ();
+typeCasting ();
 
    return 0;
 }
