@@ -7,7 +7,7 @@ void calculator( ) {
     int num1,  num2;
     char sign1, sign2;
 
-    cout<< "Enter two values:  \n";
+    cout<< "Your Using calculator:  \n";
     cin>> num1>> sign1>> num2>> sign2;
     
     int sum, sub, multiplyed, divided;
@@ -79,5 +79,7 @@ void calculator( ) {
 int main(int argc, char const *argv[])
 {
 
+calculator();
 
+return 0;
 }
