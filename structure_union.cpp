@@ -65,16 +65,26 @@ cout<< marks.science<< endl;
      return 0;
 }
 
-int enium () {
+int Enum () {
 
-cout<< "<-----------------Enium------------------->" <<endl;
+cout<< "<-----------------Enum------------------->" <<endl;
+
+// assign index number to the variable 
+typedef enum anime {one_piece, naruto, death_note, another, finaly_fanatasy,} ani; // creating enum
+
+ani anime2 = one_piece;
+ani anime = naruto;
+ani anime1 = death_note;
+
+
+cout<< anime <<endl <<anime1 <<endl <<anime2 <<endl;
 
      return 0;
 }
 
 int main () {
 
-   enium();
+   Enum();
 
      return 0;
 }
