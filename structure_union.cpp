@@ -5,8 +5,10 @@ using namespace std;
 
 int structures () {
 
-     // 
-     struct class_3A {
+     cout <<"<---------------structure-------------->" <<endl;
+
+     // creating struct data type
+     typedef struct class_3A {
           
      string UID;
      string name;
@@ -14,27 +16,65 @@ int structures () {
      string section;
      float marks;
 
-     };
+     } str;
 
-     struct class_3A students;
+     str students; // giving it a name "students"
+
+// providing data to variables 
      students.UID = "22BCA10236";
      students.name = "Shisui";
      students.phone_number = 7009524322;
      students.marks = 23.35f;
 
-cout<< students.UID <<endl;
-cout<< students.name <<endl;
-cout<< students.phone_number <<endl;
-cout<< students.marks <<endl;
+// printing all the variable
+     cout<< students.UID <<endl;
+     cout<< students.name <<endl;
+     cout<< students.phone_number <<endl;
+     cout<< students.marks <<endl;
 
 
 
      return 0;
 }
 
+int Union () {
+ 
+cout<< "<--------------Union-------------->"<< endl;
+
+
+// creating union
+typedef union subjects
+{
+
+// use only one of the data type
+    int math;
+    float science;
+    char human ;
+} sub;
+
+sub marks;
+
+marks.math = 91;
+marks.science = 12;
+marks.human = 'F';
+
+cout<< marks.science<< endl;
+// cout<< marks.human<< endl;
+
+
+     return 0;
+}
+
+int enium () {
+
+cout<< "<-----------------Enium------------------->" <<endl;
+
+     return 0;
+}
+
 int main () {
 
-   structures();
+   enium();
 
      return 0;
 }
