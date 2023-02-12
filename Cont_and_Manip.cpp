@@ -55,7 +55,7 @@ int Manipulator() {
 
     cout<< "<----------------Manipulator---------------->"<< endl;
         
-    int num = 1, num2 = 43, num3 = 234, num4 = 9245;
+    int num = 9245, num2 = 9245, num3 = 9245, num4 = 9245;
 
     cout<<"The value of num  before using setw: "<< num<< endl;
     cout<<"The value of num2 before using setw: "<< num2<< endl;
@@ -65,9 +65,9 @@ int Manipulator() {
  
     cout<<"\n"; //for blank line
 
-    cout<< "The value of num  after using setw:"<< setw(15)<< num << endl;
-    cout<< "The value of num2 after using setw:"<< setw(15)<< num2<< endl;
-    cout<< "The value of num3 after using setw:"<< setw(15)<< num3<< endl;
+    cout<< "The value of num  after using setw:"<< setw(12)<< num << endl;
+    cout<< "The value of num2 after using setw:"<< setw(13)<< num2<< endl;
+    cout<< "The value of num3 after using setw:"<< setw(14)<< num3<< endl;
     cout<< "The value of num4 after using setw:"<< setw(15)<< num4<< endl;
 
     return 0;

@@ -2,23 +2,25 @@
 
 using namespace std; 
 
-int sum () {
-
-int sum, sum2;
-int ans = sum + sum2;
-
-
-    return 0;
-}
+// void sum ();
 
 int main () {
 
-   int num1, num2;
+   int num1;
+   int num2 ;
 
-   cout<< "to add" <<endl;
-   cin>> num1, num2;
+   cin>> num1>> num2;
 
-   cout<< sum();
+   cout<< sum(&num1, &num2);
 
      return 0;
 }
+
+void sum (int *a, int *b) {
+
+int plus = *a+*b;
+
+cout<< plus;
+
+}
+
