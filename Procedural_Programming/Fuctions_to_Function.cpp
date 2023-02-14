@@ -1,26 +1,24 @@
 #include <iostream>
 
-using namespace std; 
+using namespace std;
 
-// void sum ();
+void sum(int *num1, int *num2)
+{
 
-int main () {
+  int plus = *a + *b;
 
-   int num1;
-   int num2 ;
-
-   cin>> num1>> num2;
-
-   cout<< sum(&num1, &num2);
-
-     return 0;
+  cout << plus;
 }
 
-void sum (int *a, int *b) {
+int main()
+{
 
-int plus = *a+*b;
+  int num1;
+  int num2;
 
-cout<< plus;
+  cin >> num1 >> num2;
 
+  cout << sum(num1, num2);
+
+  return 0;
 }
-

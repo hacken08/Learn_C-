@@ -1,63 +1,65 @@
 #include <iostream>
 
-using namespace std; 
+using namespace std;
 
+int Break_and_Continue()
+{
 
-int Break_and_Continue () {
+  cout << "<---------------Break and continue------------->" << endl;
 
-   cout<< "<---------------Break and continue------------->"<< endl;
+  for (int i = 0; i <= 10; i++)
+  {
 
-   for (int i = 0; i <= 10; i++)
-   {
-    
-    if (i < 7) {continue;}
+    if (i < 7)
+    {
+      continue;
+    }
 
-    cout<< i<< endl;
-   }
+    cout << i << endl;
+  }
 
-
-     return 0;
+  return 0;
 }
 
+int Pointers()
+{
 
-int Pointers () {
+  cout << "<---------------Pointers--------------->" << endl;
 
-      cout<< "<---------------Pointers--------------->"<< endl;
+  int num = 20;
+  char name = 'a';
 
-      int num = 20;
-      char name = 'a';
+  // creatging Pointer variable which stores value of "num" varibable
+  int *PtrNum = &num;
+  char *ptrName = &name;
 
-    // creatging Pointer variable which stores value of "num" varibable
-    int  * PtrNum = &num;
-    char * ptrName = &name;
+  // printing variable
+  cout << *PtrNum << endl; //  To print it's value
+  cout << PtrNum << endl;  //  To print it's address
 
-    // printing variable 
-    cout<< * PtrNum<< endl; //  To print it's value 
-    cout<< PtrNum<< endl; //  To print it's address
+  cout << endl;
 
-    cout<< endl;
+  cout << *ptrName << endl; // To print value of char
+  cout << ptrName << endl;  // To print address of char
 
-    cout<< *ptrName <<endl; // To print value of char
-    cout<< ptrName <<endl; // To print address of char
-   
-    cout<< endl;
+  cout << endl;
 
-    // print address directly 
-    cout<< &PtrNum<< endl<< &ptrName<< endl;
+  // print address directly
+  cout << &PtrNum << endl
+       << &ptrName << endl;
 
-    cout<< endl; 
+  cout << endl;
 
-    // pointer to pointer
-    int **ptr2 = &PtrNum;
+  // pointer to pointer
+  int **ptr2 = &PtrNum;
 
-    cout<< **ptr2;
+  cout << **ptr2;
 
-     return 0;
+  return 0;
 }
 
+int main()
+{
 
-int main () {
-
-Break_and_Continue ();
-   
+  Break_and_Continue();
 }

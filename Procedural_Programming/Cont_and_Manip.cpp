@@ -1,41 +1,39 @@
-#include <iostream> 
+#include <iostream>
 #include <iomanip>
 
 using namespace std;
 
+int ConstVaribale()
+{
 
-
-int ConstVaribale () {
-
-    cout<< "<---------------- Const ---------------->"<< endl;
+    cout << "<---------------- Const ---------------->" << endl;
 
     // changable varibale
-    cout<< "Changeable Variable"<<endl;
+    cout << "Changeable Variable" << endl;
     int var = 69;
     float var1 = 69.69;
     char var2 = 'F';
 
-    cout<< var<< endl;
-    cout<< var1<< endl; 
-    cout<< var2<< endl;
+    cout << var << endl;
+    cout << var1 << endl;
+    cout << var2 << endl;
 
-    cout<< "\n"; // for blank line
+    cout << "\n"; // for blank line
 
     // changing variable's value
-    cout<< "values after changing"<<endl;
+    cout << "values after changing" << endl;
     var = 63;
     var1 = 66.96;
     var2 = 'q';
-    
-    cout<< var<< endl;
-    cout<< var1<< endl; 
-    cout<< var2<< endl;
 
-    cout<< "\n"; // for blank line
+    cout << var << endl;
+    cout << var1 << endl;
+    cout << var2 << endl;
 
+    cout << "\n"; // for blank line
 
     // const variable which cannot be changed
-    cout<< "non chanable variable "<<endl;
+    cout << "non chanable variable " << endl;
     const int ConVar = 56;
     const float ConVar2 = 45;
     const char ConVar3 = 'S';
@@ -45,38 +43,38 @@ int ConstVaribale () {
     // ConVar2 = 23;
     // Convar3 = 'w';
 
-    cout<<"\n"; //for blank line
-    cout<<"\n"; //for blank line
- 
+    cout << "\n"; // for blank line
+    cout << "\n"; // for blank line
+
     return 0;
 }
 
-int Manipulator() {
+int Manipulator()
+{
 
-    cout<< "<----------------Manipulator---------------->"<< endl;
-        
+    cout << "<----------------Manipulator---------------->" << endl;
+
     int num = 9245, num2 = 9245, num3 = 9245, num4 = 9245;
 
-    cout<<"The value of num  before using setw: "<< num<< endl;
-    cout<<"The value of num2 before using setw: "<< num2<< endl;
-    cout<<"The value of num3 before using setw: "<< num3<< endl;
-    cout<<"The value of num4 before using setw: "<< num4<< endl;
+    cout << "The value of num  before using setw: " << num << endl;
+    cout << "The value of num2 before using setw: " << num2 << endl;
+    cout << "The value of num3 before using setw: " << num3 << endl;
+    cout << "The value of num4 before using setw: " << num4 << endl;
 
- 
-    cout<<"\n"; //for blank line
+    cout << "\n"; // for blank line
 
-    cout<< "The value of num  after using setw:"<< setw(12)<< num << endl;
-    cout<< "The value of num2 after using setw:"<< setw(13)<< num2<< endl;
-    cout<< "The value of num3 after using setw:"<< setw(14)<< num3<< endl;
-    cout<< "The value of num4 after using setw:"<< setw(15)<< num4<< endl;
+    cout << "The value of num  after using setw:" << setw(12) << num << endl;
+    cout << "The value of num2 after using setw:" << setw(13) << num2 << endl;
+    cout << "The value of num3 after using setw:" << setw(14) << num3 << endl;
+    cout << "The value of num4 after using setw:" << setw(15) << num4 << endl;
 
     return 0;
 }
 
 int main(int argc, char const *argv[])
 {
-    
-    Manipulator ();
+
+    Manipulator();
 
     return 0;
 }
