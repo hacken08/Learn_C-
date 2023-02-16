@@ -3,68 +3,72 @@
 
 using namespace std;
 
-class student
+class Mark
 {
     // Data Members
-private:
-    float mark;
-    int UID;
-    char result;
-
-
+string decimal;
 
 public:
-    string Name, status;
-    int email, phone_number;
-
-    // member fucntion
-    void PrivateInfo(int a, int b, int c)
-    {
-        mark = a;
-        UID = b;
-        result = c;
-    }
-   
+    void read();
+    void chk();
+    void get();
+    void outPut();
 };
 
- int Deci_to_binary(int num)
+void Mark ::read()
+{
+    cout << "Enter a binary Number: " << endl;
+    cin >> decimal;
+}
+
+void Mark ::chk()
+{
+    for (int a = 0; a < decimal.length(); a++)
     {
 
-        int Deci[200];
-
-        int i = 0;
-        while (num > 0)
+        if (decimal.at(a) != '0' && decimal.at(a) != '1')
         {
-            Deci[i] = num % 2;
-            num = num / 2;
-            ++i;
-        }
-        for (int j = i - 1; j > 0; j--)
-        {
-            cout << Deci[j];
+            cout << "Binary format is not acceptable" << endl;
+            break;
         }
     }
-    
+}
+
+void Mark :: get()
+{
+
+    for (int j = 0; j < decimal.length(); j++)
+    {
+
+        if (decimal.at(j) == '0')
+        {
+            decimal.at(j) = '1';
+        }
+        else
+        {
+            decimal.at(j) = '0';
+        }
+    }
+}
+
+void Mark ::outPut()
+{
+
+    for (int j = 0; j < decimal.length(); j++)
+    {
+        cout << decimal.at(j);
+    }
+    cout<< endl;
+}
+
 int main()
 {
-    student Anmol;
-    Anmol.phone_number = 524;
-    Anmol.email = 0;
-    // Anmol.mark = 45;
+    Mark science;
 
-    cout<< Anmol.email<< endl;
-    // cout<< Anmol.mark << endl;
-
-    // Anmol.mark = 50 ;  erro --> coz it's private variable only accessable by fuction
-    Anmol.PrivateInfo(23.4f, 10236, 'p');
-    //    Anmol.getInfo();
-
-    int InNum;
-
-    // cout << "Enter a Decimal NUmber: " << endl;
-    // cin >> InNum;
-
-    // Anmol.Deci_to_binary(50);
+    science.read();
+    science.chk();
+    science.get();
+    science.outPut();
 
     return 0;
 }
