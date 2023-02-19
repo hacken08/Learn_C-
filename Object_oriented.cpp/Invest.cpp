@@ -10,6 +10,7 @@ public:
     int year;
 
     void EstAmt(int Inv, int per, int year);
+    void getData();
     // void display (int Show);
 };
 
@@ -24,9 +25,8 @@ void Amout ::EstAmt(int Inv, int per, int year)
     cout << "Total earning => " << FinalAmt << endl;
 }
 
-int main()
+void Amout::getData()
 {
-
     Amout income;
 
     cout
@@ -42,7 +42,13 @@ int main()
 
     cout << "Enter Number of year: ";
     cin >> income.year;
+}
 
+int main()
+{
+
+    Amout income;
+    income.getData();
     income.EstAmt(income.InvAmt, income.Interest, income.year);
 
     return 0;
