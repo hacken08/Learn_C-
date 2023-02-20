@@ -9,15 +9,15 @@ public:
     float InvAmt, Interest;
     int year;
 
-    void EstAmt(int Inv, int per, int year);
+    void EstAmt(int Inv, int Int, int year);
     void getData();
     // void display (int Show);
 };
 
-void Amout ::EstAmt(int Inv, int per, int year)
+void Amout ::EstAmt(int Inv, int Int, int year)
 {
 
-    float Int_per_year = per * year;
+    float Int_per_year = Int * year;
 
     float PerYear = (Inv * Int_per_year) / 100;
     float FinalAmt = PerYear + Inv;
@@ -28,7 +28,12 @@ void Amout ::EstAmt(int Inv, int per, int year)
 void Amout::getData()
 {
     Amout income;
+}
 
+int main()
+{
+
+    Amout income;
     cout
         << "--------Invesment Calculator-------" << endl;
 
@@ -42,13 +47,7 @@ void Amout::getData()
 
     cout << "Enter Number of year: ";
     cin >> income.year;
-}
 
-int main()
-{
-
-    Amout income;
-    income.getData();
     income.EstAmt(income.InvAmt, income.Interest, income.year);
 
     return 0;
