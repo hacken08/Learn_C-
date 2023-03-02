@@ -9,7 +9,7 @@ void chk_decimal(float n)
     //    cin>>n;
     if ((long double)n == (int)n)
     {
-        cout << "Erro: enter a decimal number" << endl;
+        cout << "Error: enter a decimal number" << endl;
         exit(0);
     }
 }

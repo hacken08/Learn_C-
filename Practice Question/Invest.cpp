@@ -25,10 +25,10 @@ void Amout ::EstAmt(int Inv, int Int, int year)
     cout << "Total earning => " << FinalAmt << endl;
 }
 
-void Amout::getData()
-{
-    Amout income;
-}
+// void Amout::getData()
+// {
+//     Amout income;
+// }
 
 int main()
 {
