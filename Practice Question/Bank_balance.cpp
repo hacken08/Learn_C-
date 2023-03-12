@@ -6,14 +6,11 @@ class Bank
 {
 
 public:
+// data members
     int accType;
-
     long AccNo;
-
     string name;
-
     float Dep, withdraw;
-
     int bal = 1000;
 
     void Bnk_data()

@@ -55,8 +55,8 @@ int typeCasting()
 
     float Char = float(num);
     char type2 = char(var);
-    cout << Char << endl
-         << type2 << endl;
+    cout << Char << endl;
+    cout << type2 << endl;
 
     // Another way of casting:
 
