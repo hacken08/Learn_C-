@@ -6,14 +6,14 @@ class Bank
 {
 
 public:
-// data members
+    // data members
     int accType;
     long AccNo;
     string name;
     float Dep, withdraw;
     int bal = 1000;
 
-    void Bnk_data()
+    inline void Bnk_data()
     {
         cout << "Account NO. ";
         cin >> AccNo;
@@ -46,19 +46,19 @@ public:
         }
     }
 
-    void Balance()
+    inline void Balance()
     {
         cout << "Your Balance = " << bal << endl;
     }
 
-    void Deposite()
+    inline void Deposite()
     {
         cout << "Deposite Amount = ";
         cin >> Dep;
         bal += Dep;
     }
 
-    void Withdraw()
+    inline void Withdraw()
     {
         cout << "Withdraw Amount = ";
         cin >> withdraw;

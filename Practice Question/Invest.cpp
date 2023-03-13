@@ -14,7 +14,7 @@ public:
     // void display (int Show);
 };
 
-void Amout ::EstAmt(int Inv, int Int, int year)
+inline void Amout ::EstAmt(int Inv, int Int, int year)
 {
 
     float Int_per_year = Int * year;
@@ -25,30 +25,35 @@ void Amout ::EstAmt(int Inv, int Int, int year)
     cout << "Total earning => " << FinalAmt << endl;
 }
 
-// void Amout::getData()
-// {
-//     Amout income;
-// }
-
-int main()
+inline void Amout::getData()
 {
-
-    Amout income;
     cout
         << "--------Invesment Calculator-------" << endl;
 
     cout << endl;
 
     cout << "Enter Invisted amount: ";
-    cin >> income.InvAmt;
+    cin >> InvAmt;
 
     cout << "Enter per year Interst rate in percentage: ";
-    cin >> income.Interest;
+    cin >> Interest;
 
     cout << "Enter Number of year: ";
-    cin >> income.year;
+    cin >> year;
 
-    income.EstAmt(income.InvAmt, income.Interest, income.year);
+    EstAmt(InvAmt, Interest, year);
+}
+
+int main()
+{
+
+    Amout i1, i2, i3, i4, i5;
+
+    i1.getData();
+    i2.getData();
+    i3.getData();
+    i4.getData();
+    i5.getData();
 
     return 0;
 }

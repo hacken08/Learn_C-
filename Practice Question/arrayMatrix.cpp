@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 
-    cout << "enter matrix number: " << endl;
+    cout << "enter matrix number: ";
     static int mtrx[2][2];
 
     //  input matrix
@@ -24,12 +24,12 @@ int main()
         {
             if (c == 0 && r == 0)
             {
-                cout << "Your array => ";
+                cout << "Your Matrix => ";
             }
 
             if (r >= 1 && c == 0)
             {
-                cout << "              ";
+                cout << "               ";
             }
 
             cout << mtrx[r][c] << "    ";
