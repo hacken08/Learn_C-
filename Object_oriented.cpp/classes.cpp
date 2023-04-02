@@ -6,7 +6,7 @@ using namespace std;
 class Mark
 {
     // Data Members
-string decimal;
+    string decimal;
 
 public:
     void read();
@@ -33,8 +33,8 @@ void Mark ::chk()
         }
     }
 }
-
-void Mark :: get()
+        
+void Mark ::get()
 {
 
     for (int j = 0; j < decimal.length(); j++)
@@ -58,7 +58,7 @@ void Mark ::outPut()
     {
         cout << decimal.at(j);
     }
-    cout<< endl;
+    cout << endl;
 }
 
 int main()

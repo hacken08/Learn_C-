@@ -41,13 +41,13 @@ int main()
     employe4.address = "Mansa, Streete no 2";
 
     cout << "Name   Joining Year    adress" << endl;
-    cout << employe1.name << "   " << employe1.Joining_year << "        " << employe1.address << endl;
+    cout << employe1.name << "   " << employe1.Joining_year << "      " << employe1.address << endl;
 
-    cout << employe2.name << "   " << employe2.Joining_year << "        " << employe2.address << endl;
+    cout << employe2.name << "   " << employe2.Joining_year << "      " << employe2.address << endl;
 
-    cout << employe3.name << "   " << employe3.Joining_year << "        " << employe3.address << endl;
+    cout << employe3.name << "   " << employe3.Joining_year << "      " << employe3.address << endl;
 
-    cout << employe4.name << "   " << employe4.Joining_year << "        " << employe4.address << endl;
+    cout << employe4.name << "   " << employe4.Joining_year << "      " << employe4.address << endl;
     ;
 
     return 0;
